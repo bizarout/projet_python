@@ -1,11 +1,27 @@
-quote = ["le vrai malheur c'est d'être en valeur ", " l'or c'est toujour gagnant"," le danger reste une condition"," la santé est degradable", "le machinism est une philosophie"]
+quote = ["le vrai malheur c'est d'être en valeur ", "l'or c'est toujour gagnant","le danger reste une condition",""
+																												 "la santé est degradable", "le machinism est une philosophie"]
 
-reponse_utilisater = "C"
-if reponse_utilisater == "B":
-	pass
-elif reponse_utilisater == "C":
-	print(" c'est la bonne reponse.C..")
+reponse_utilisater = input( " entrer un caractere : 	")
 
 
-else: 
-	pass
+def show_random_quote(my_list):
+	quote = my_list[1]
+	return  quote
+
+while (reponse_utilisater != "B"):
+	print(show_random_quote(quote))
+	reponse_utilisater = input(" entrer un caractere : 	")
+
+
+for item in quote:
+	item_c = item.capitalize()
+	print(item_c)
+
+
+
+
+
+
+
+
+
